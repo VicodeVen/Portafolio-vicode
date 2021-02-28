@@ -854,6 +854,10 @@ width: 12px;
     font-size: .95em;
 }
 
+.servicios-mobile {
+    display: none;
+}
+
 @media screen and (max-width: 400px) {
 
     /* OCULTABLES */
@@ -992,7 +996,7 @@ width: 12px;
     margin: auto;
 }
 
-#board {
+#board, .servicios, .t-decoration-service {
     display: none;
 }
 
