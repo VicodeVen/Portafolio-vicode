@@ -4,6 +4,7 @@ import slider from "./slider.js";
 import box_light from "./box_light.js";
 import scroll  from "./scroll_animate.js";
 import canvasAnimate from "./canvas.js";
+import animations from "./animations.js";
 
 document.addEventListener("DOMContentLoaded", () => {
     scroll();
@@ -12,6 +13,7 @@ document.addEventListener("DOMContentLoaded", () => {
     slider();
     Formulario();
     canvasAnimate();
+    animations();
 });
 
 
