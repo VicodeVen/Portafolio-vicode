@@ -18,6 +18,6 @@ export default function scroll() {
             contentDos.classList.remove("fadeIn");
             contentDos.classList.remove("dsplact");
         }
-        console.log(w.pageYOffset);
+        // console.log(w.pageYOffset);
     });
 };

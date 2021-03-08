@@ -2,18 +2,26 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content
-    ="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/1.1.3/hamburgers.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="MobileOptimized" content="width"> 
+    <meta name="HandheldFriendly" content="true">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style">
+    <link rel="shortcut icon" type="image/png" href="./img/favicon.ico">
+    <link rel="apple-touch-startup-image" href="./img/favicon.ico">
+    <link rel="apple-touch-icon" href="./img/favicon.ico">
+    <link rel="manifest" href="./manifest.json">
     <link rel="stylesheet" href="./css/style_hamburger.css">
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="./css/styles_formulario.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/1.1.3/hamburgers.min.css"> -->
+    <!-- <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@598&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300&family=Signika:wght@700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/3e429e9c0c.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/> -->
     <title>Victor Requena | Portafolio</title>
 </head>
 <body class="body">
@@ -41,7 +49,6 @@
             </button>
             <div class="menu-navegacion">
                 <ul class="ul-menu-nav">
-                    <!-- <img src="img/logo3.png" alt="" class="menu-logo" > -->
                     <li class="menu-tags"><a href="#seccion1" class="menu-tags">Inicio</a></li>
                     <li class="menu-tags"><a href="#seccion2" class="menu-tags">Sobre mi</a></li>
                     <li class="menu-tags"><a href="#seccion3" class="menu-tags">Portafolio</a></li>
@@ -49,6 +56,7 @@
                     <li class="menu-tags"><a href="#seccion5" class="menu-tags">Contacto</a></li>
                 </ul>
             </div>
+    
             <div class="seccion1" id="seccion1">
                 <nav class="titulos">
                     <h1 class="t-name active">Victor  Requena</h1>
@@ -59,7 +67,7 @@
                 </nav>
             </div>
         <div class="seccion2" id="seccion2">
-            <div class="content2 fadeIn dsplact">
+            <div class="content2">
                 <nav class="about">
                     <h1 class="t-sobre-mi">Sobre mi</h1>
                     <div class="parrafo-about">
@@ -73,9 +81,9 @@
                     <img src="img/logo3.png" alt="" class="img-about">
                 </nav>
             </div>
-
+                    
             <div class="content2-2">
-                <div class="barras-de-progresos fadeInLeft transport">
+                <div class="barras-de-progresos">
                     <h4 class="t-tech">Tecnologias</h4>
                     <div class="progress-bar1">
                         <p class="tech-p">HTML5</p>
@@ -97,19 +105,20 @@
                     <p>
                         Desde que empece en el desarrollo de software
                         mi intencion fue y es, especializarme en el lenguaje de programacion JavaScript debido a su versatilidad y su capacidad de desenvolverse en varias ramas de una manera excelente, ahora busco mejorar cada dia mis habilidades en el lenguaje tanto del lado del backend como del frontend orientandome un poquito mas por el frontend en cuanto a pasion se trata. Ahora mismo estoy aprendiendo reactjs y nodejs dedicandole mas tiempo a react pero sin descuidar node.Siempre buscando estabildad entre lo puntero y lo estable... 
-                       
                     </p>
                 </nav>
             </div>
             </div>
-            <nav class="t-decoration-service" style="display: none;">
-                <nav class="line-up"></nav>
-                <h6 class="t-servicios">Servicios</h6>
-                <nav class="line-down"></nav>
-            </nav>
             <div class="servicios">
-                <nav class="box1">
-                    <div class="block">
+                <nav class="t-decoration-service">
+                    <!-- <nav class="line-up"></nav> -->
+                    <h6 class="t-servicios">Servicios</h6>
+                    <!-- <nav class="line-down"></nav> -->
+                </nav>
+                <nav class="envolment">
+
+                    <nav class="box1">
+                        <div class="block">
                         <p class="square ser1">
                             Las Progressive Web App son páginas web que utilizan estándares web recientes para permitir la conversión web a app. Ofrece una experiencia de usuario similar a la aplicación nativa para los usuarios. 
                         </p>
@@ -128,7 +137,7 @@
                         <img src="img/undraw_Projections_re_1mrh.svg" alt="">
                     </nav>
                 </nav>
-                <canvas id="board" width="5px" height="1600px"></canvas>
+                <canvas id="board" width="5px" height="2000px"></canvas>
                 <nav class="box2">
                     <nav class="block">
                         <img src="img/undraw_progressive_app_m9ms (1).svg" alt="">
@@ -149,8 +158,9 @@
                         </p>
                     </nav>    
                 </nav>
-        </div>
-
+            </div>
+        </nav>
+            
         <nav class="servicios-mobile">
             <!-- <nav class="line-up"></nav> -->
             <h6 class="t-servicios">Servicios</h6>
@@ -174,17 +184,16 @@
                 </p>
             </nav>
         </nav>
-        
+
         <div class="seccion3" id="seccion3">
+                <h1 class="t-portafolio">Portafolio</h1>
                 <div class="arrows">
-                    <i class="fas fa-angle-left"></i>
-                    <i class="fas fa-angle-right"></i>
+                    <!-- CAMBIAR CUANDO TENGA INTERNET -->
+                    <!-- <i class="fas fa-angle-left"></i> -->
+                    <!-- <i class="fas fa-angle-right"></i> -->
+                    <p class="fa-angle-left">◄</p>
+                    <p class="fa-angle-right">►</p>
                 </div>
-                <nav class="t-decoration">
-                    <nav class="line-up"></nav>
-                    <h1 class="t-portafolio">Portafolio</h1>
-                    <nav class="line-down"></nav>
-                </nav>
                 <div class="portafolio" id="portafolio">
                     <div class="main-screen" id="main-screen">
                         <div class="item">
@@ -215,19 +224,19 @@
                 <div class="content4-1">
                         <nav class="grid-destacados">
                             <article class="house">
-                                <img src="./img/gradient-4k-abstract-geometric-figures-digital-hd-wallpaper-preview.jpg" alt="">
+                                <img src="./img/undraw_not_found_60pq.svg" alt="">
                                 <p class="t-tech-card">HTML</p>
                                 <p class="t-sinopsis"> En este articulo conoceremos  a la etiqueta <strong>canvas</strong> y algunos ejemplos de lo que puedes llegar ah hacer con ella.</p>
                             </article>
                 
                             <article class="house">
-                                <img src="./img/gradient-4k-abstract-geometric-figures-digital-hd-wallpaper-preview.jpg" alt="">
+                                <img src="./img/undraw_not_found_60pq.svg" alt="">
                                 <p class="t-tech-card">CSS</p>
                                 <p class="t-sinopsis">En este articulo (tutorial) veremos como podemos hacer que una imagen se acople a su contenedor con unas sencillas propiedades de CSS.</p>
                             </article>
                 
                             <article class="house">
-                                <img src="./img/gradient-4k-abstract-geometric-figures-digital-hd-wallpaper-preview.jpg" alt="">
+                                <img src="./img/undraw_not_found_60pq.svg" alt="">
                                 <p class="t-tech-card">JAVASCRIPT</p>
                                 <p class="t-sinopsis"> En este articulo veremos porque VanillaJS SI se puede utilizar en grandes proyectos y las ventajas y desventajas que esto le trae a los desarrolladores.</p>
                             </article>
@@ -246,7 +255,7 @@
                     <main>
                         <form class="formulario" id="formulario">
                             <div class="formulario__grupo" id="grupo__nombre">
-                                <label for="nombre" class="formulario__label">nombre</label>
+                                <label for="nombre" class="formulario__label">Nombre</label>
                                 <div class="formulario__grupo-input">
                                     <input type="text" class="formulario__input" name="nombre" id="usuario" placeholder="Nombre">
                                     <i class="formulario__validacion-estado fas fa-times-circle"></i>
@@ -255,7 +264,7 @@
                             </div>
                 
                             <div class="formulario__grupo" id="grupo__apellido">
-                                <label for="apellido" class="formulario__label">apellido</label>
+                                <label for="apellido" class="formulario__label">Apellido</label>
                                 <div class="formulario__grupo-input">
                                     <input type="text" class="formulario__input" name="apellido" id="apellido" placeholder="Apellido">
                                     <i class="formulario__validacion-estado fas fa-times-circle"></i>
@@ -282,7 +291,7 @@
                             </div>
 
                             <div class="formulario__grupo" id="grupo__mensaje">
-                                <label for="mensaje" class="formulario__label">mensaje</label>
+                                <label for="mensaje" class="formulario__label">Mensaje</label>
                                 <div class="formulario__grupo-input">
                                     <input type="text" class="mensaje__input" name="mensaje" id="mensaje">
                                     <i class="formulario__validacion-estado fas fa-times-circle"></i>
@@ -296,6 +305,8 @@
                 
                             <div class="formulario__grupo formulario__grupo-btn-enviar">
                                 <button type="submit" class="formulario__btn">Enviar</button>
+                                <!-- <canvas id="btn-canvas" width="160px" height="45px"> -->
+                                <!-- </canvas> -->
                                 <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado exitosamente!!</p>
                             </div>
                         </form>
@@ -303,9 +314,11 @@
                 </div>
             </div>
         </section>    
-        <footer class="footer">
-            <p>© Victor Requena 2021</p>
-        </footer>
-    <script src="js/main.js" type="module"></script>
+    
+        <script type="module" src="js/main.js"></script>
+
+    <script>
+    CSS.paintWorklet.addModule('js/button.js');
+    </script>
 </body>
 </html>

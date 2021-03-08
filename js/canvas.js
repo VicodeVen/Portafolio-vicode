@@ -78,7 +78,6 @@ export default function canvasAnimate () {
             $ser4.classList.remove("transport")
         };
         if(playing) requestAnimationFrame(draw)
-        
     }
-requestAnimationFrame(draw);
+    requestAnimationFrame(draw);
 }
