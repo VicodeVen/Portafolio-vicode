@@ -12,16 +12,16 @@
     <link rel="apple-touch-startup-image" href="./img/favicon.ico">
     <link rel="apple-touch-icon" href="./img/favicon.ico">
     <link rel="manifest" href="./manifest.json">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/1.1.3/hamburgers.min.css">
     <link rel="stylesheet" href="./css/style_hamburger.css">
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="./css/styles_formulario.css">
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/1.1.3/hamburgers.min.css"> -->
-    <!-- <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@598&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300&family=Signika:wght@700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/3e429e9c0c.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/> 
     <title>Victor Requena | Portafolio</title>
 </head>
 <body class="body">
@@ -36,31 +36,35 @@
         <section class="contenedor">
             <div class="box-dark" id="box-dark">
                 <ul class="ul-box">
-                    <li class="tag__box"><a href="#seccion1" class="a">Inicio</a></li>
+                    <li class="tag__box"><a href="#seccion1" class="a">Home</a></li>
                     <li class="tag__box"><a href="#seccion2" class="a">About me</a></li> 
-                    <li class="tag__box"><a href="#seccion3" class="a">Portafolio</a></li>
-                    <li class="tag__box"><a href="#seccion4" class="a">Blog</a></li>
-                    <li class="tag__box"><a href="#seccion5" class="a">Contacto</a></li>
+                    <li class="tag__box"><a href="#servicios" class="a">Services</a></li> 
+                    <li class="tag__box"><a href="#seccion3" class="a">Portfolio</a></li>
+                    <li class="tag__box"><a href="#seccion4" class="a">Experments</a></li>
+                    <li class="tag__box"><a href="#seccion5" class="a">Contact</a></li>
                 </ul>
             </div>
+
             <button class="hamburger hamburger--3dxy" type="button">
                 <span class="hamburger-box"></span>
                 <span class="hamburger-inner"></span>
             </button>
+
             <div class="menu-navegacion">
                 <ul class="ul-menu-nav">
-                    <li class="menu-tags"><a href="#seccion1" class="menu-tags">Inicio</a></li>
-                    <li class="menu-tags"><a href="#seccion2" class="menu-tags">Sobre mi</a></li>
-                    <li class="menu-tags"><a href="#seccion3" class="menu-tags">Portafolio</a></li>
-                    <li class="menu-tags"><a href="#seccion4" class="menu-tags">Blog</a></li>
-                    <li class="menu-tags"><a href="#seccion5" class="menu-tags">Contacto</a></li>
+                    <li class="menu-tags"><a href="#seccion1" class="menu-tags">Home</a></li>
+                    <li class="menu-tags"><a href="#seccion2" class="menu-tags">About me</a></li>
+                    <li class="menu-tags"><a href="#servicios" class="menu-tags">Services</a></li>
+                    <li class="menu-tags"><a href="#seccion3" class="menu-tags">Portfolio</a></li>
+                    <li class="menu-tags"><a href="#seccion4" class="menu-tags">Experiments</a></li>
+                    <li class="menu-tags"><a href="#seccion5" class="menu-tags">Contact</a></li>
                 </ul>
             </div>
     
             <div class="seccion1" id="seccion1">
                 <nav class="titulos">
                     <h1 class="t-name active">Victor  Requena</h1>
-                    <strong class="sub-title">Desarrollador Web</strong>
+                    <strong class="sub-title">Software Developer</strong>
                 </nav>
                 <nav class="header-image">
                     <img src="./img/undraw_not_found_60pq.svg" class="not-found" alt="">
@@ -69,16 +73,24 @@
         <div class="seccion2" id="seccion2">
             <div class="content2">
                 <nav class="about">
-                    <h1 class="t-sobre-mi">Sobre mi</h1>
+                    <h1 class="t-sobre-mi">About me</h1>
                     <div class="parrafo-about">
-                        <p class="p-sobre-mi">Hola, yo soy <b>Victor Manuel Requena</b> naci el 20 de octubre del 2003 en  <b>Tucupita Delta Amacuro</b>  Soy FrontEnd Developer en proceso empece a enamorarme del mundo del desarollo desde septiembre del 2020, desde entonces lo primero que desarrolle fue mi pasion por las tecnologias Web,
-                            en especial <b>VanillaJS.</b> Participo activamente en comunidades de Desarrollo de software en plataformas como Discord y Stackoverflow.<br>
-                            <br>Me considero una persona responsable, minimalista, capaz de afrontar retos y con una buena capacidad de aprendizaje. Hace mas o menos un año desperte el amor por la lectura que todos los humanos llevamos dentro, en este momento estoy leyendo <b>Eloquent JavaScript.</b>
+                        <p class="p-sobre-mi">
+                            Hola, yo soy <b>Victor Manuel Requena</b> naci el 20 de octubre del 2003
+                            en  <b>Tucupita Delta Amacuro</b>  Soy FrontEnd Developer en proceso empece
+                            a enamorarme del mundo del desarollo desde septiembre del 2020, desde entonces
+                            lo primero que desarrolle fue mi pasion por las tecnologias Web,
+                            en especial <b>VanillaJS.</b> Participo activamente en comunidades de
+                            Desarrollo de software en plataformas como Discord y Stackoverflow.<br>
+                            <br>Me considero una persona responsable, minimalista, capaz de afrontar retos
+                            y con muchas ganas de aprender. Hace mas o menos un año desperte el amor por
+                            la lectura que todos los humanos llevamos dentro, en este momento estoy leyendo
+                            <b>Eloquent JavaScript.</b>
                         </p>
                     </div>
                 </nav>
                 <nav class="mockups">
-                    <img src="img/logo3.png" alt="" class="img-about">
+                    <img loading="lazy" src="img/logo3.png" alt="Logo de Victor Requena" class="img-about">
                 </nav>
             </div>
                     
@@ -104,19 +116,26 @@
                 <nav class="mockup-tech">
                     <p>
                         Desde que empece en el desarrollo de software
-                        mi intencion fue y es, especializarme en el lenguaje de programacion JavaScript debido a su versatilidad y su capacidad de desenvolverse en varias ramas de una manera excelente, ahora busco mejorar cada dia mis habilidades en el lenguaje tanto del lado del backend como del frontend orientandome un poquito mas por el frontend en cuanto a pasion se trata. Ahora mismo estoy aprendiendo reactjs y nodejs dedicandole mas tiempo a react pero sin descuidar node.Siempre buscando estabildad entre lo puntero y lo estable... 
+                        mi intencion fue y es, especializarme en el lenguaje
+                        de programacion JavaScript debido a su versatilidad y
+                        su capacidad para desenvolverse en varias ramas de una
+                        manera excelente, ahora busco mejorar cada dia mis habilidades
+                        en el lenguaje tanto del lado del backend como del frontend
+                        orientandome un poquito mas por el frontend en cuanto a pasion
+                        se trata. Ahora mismo estoy aprendiendo reactjs y nodejs
+                        dedicandole mas tiempo a react pero sin descuidar node.
+                        Siempre buscando estabildad entre lo puntero y lo estable... 
                     </p>
                 </nav>
             </div>
             </div>
-            <div class="servicios">
+            <div class="servicios" id="servicios">
                 <nav class="t-decoration-service">
                     <!-- <nav class="line-up"></nav> -->
-                    <h6 class="t-servicios">Servicios</h6>
+                    <h6 class="t-servicios">Services</h6>
                     <!-- <nav class="line-down"></nav> -->
                 </nav>
                 <nav class="envolment">
-
                     <nav class="box1">
                         <div class="block">
                         <p class="square ser1">
@@ -125,7 +144,7 @@
                         <strong class="t-service service1">Desarrollo de PWA</strong>
                     </div>
                     <nav class="block">
-                        <img src="img/undraw_experience_design_eq3j.svg" alt="">
+                        <img loading="lazy" src="img/undraw_experience_design_eq3j.svg" alt="">
                     </nav>
                     <nav class="block">
                         <p class="square ser2">
@@ -134,22 +153,22 @@
                         <strong class="t-service service2">Desarrollo FrontEnd</strong>
                     </nav>
                     <nav class="block">
-                        <img src="img/undraw_Projections_re_1mrh.svg" alt="">
+                        <img loading="lazy" src="img/undraw_Projections_re_1mrh.svg" alt="Desarrollo Front-end">
                     </nav>
                 </nav>
-                <canvas id="board" width="5px" height="2000px"></canvas>
+                <canvas id="board" width="5px" height="1600px"></canvas>
                 <nav class="box2">
                     <nav class="block">
-                        <img src="img/undraw_progressive_app_m9ms (1).svg" alt="">
+                        <img loading="lazy" src="img/undraw_progressive_app_m9ms (1).svg" alt="Curva de progreso">
                     </nav>
                     <nav class="block block-right">
-                        <strong class="t-service service4">Diseño Web</strong>
+                        <strong class="t-service service4">Web Design</strong>
                         <p class="square ser4">
                             Le ofrezco un diseño efectivo a su página web que incorpore no solo un look atractivo y atrayente, sino también que resalte por encima de la competencia.
                         </p>
                     </nav>
                     <nav class="block">
-                        <img src="img/undraw_programming_2svr (1).svg" alt="">
+                        <img loading="lazy" src="img/undraw_programming_2svr (1).svg" alt="Desarrollador Web">
                     </nav>
                     <nav class="block block-right">
                         <strong class="t-service service3">SEO</strong>
@@ -160,10 +179,9 @@
                 </nav>
             </div>
         </nav>
-            
         <nav class="servicios-mobile">
             <!-- <nav class="line-up"></nav> -->
-            <h6 class="t-servicios">Servicios</h6>
+            <h6 class="t-servicios">Services</h6>
             <!-- <nav class="line-down"></nav> -->
             <nav class="s-box">
                 <strong class="t-service service1">Desarrollo de PWA</strong>
@@ -174,7 +192,7 @@
                 <p class="square ser2">
                     Desarrollo diseños de UI desde los mas basicos hasta los mas unicos e impresionantes, utilizando los ultimos estandares de maquetacion y programacion frontend de la industria.
                 </p>
-                <strong class="t-service service4">Diseño Web</strong>
+                <strong class="t-service service4">Web Design</strong>
                 <p class="square ser4">
                     Le ofrezco un diseño efectivo a su página web que incorpore no solo un look atractivo y atrayente, sino también que resalte por encima de la competencia.
                 </p>
@@ -184,31 +202,27 @@
                 </p>
             </nav>
         </nav>
-
         <div class="seccion3" id="seccion3">
-                <h1 class="t-portafolio">Portafolio</h1>
+                <h1 class="t-portafolio">Portfolio</h1>
                 <div class="arrows">
-                    <!-- CAMBIAR CUANDO TENGA INTERNET -->
-                    <!-- <i class="fas fa-angle-left"></i> -->
-                    <!-- <i class="fas fa-angle-right"></i> -->
-                    <p class="fa-angle-left">◄</p>
-                    <p class="fa-angle-right">►</p>
+                    <i class="fas fa-angle-left"></i>
+                    <i class="fas fa-angle-right"></i>
                 </div>
                 <div class="portafolio" id="portafolio">
                     <div class="main-screen" id="main-screen">
                         <div class="item">
-                            <img src="./img/Sin título.png" class="slider_imagen" id="slider1" alt="work">
+                            <img src="./img/asset-game.png" class="slider_imagen" id="slider2" alt="juego de piedra papel o tijeras">
                         </div> 
                         <div class="item">
-                            <img src="./img/social-media-dshboard-image.png"class="slider_imagen" id="slider2" alt="">
+                            <img src="./img/asset-agent.png" class="slider_imagen" id="slider1" alt="Proyecto de portafolio">
                         </div>
                         <div class="item">
-                            <img src="./img/easy-bank-image.png" class="slider_imagen" id="slider2" alt="">
+                            <img src="./img/social-media-dshboard-image.png"class="slider_imagen" id="slider2" alt="Social media dashboard project">
                         </div>
                     </div>
                     <div class="work-option">
                         <div class="opciones">
-                            <div class="div-projects"><a class="btn-projects" href="https://es.reactjs.org/">Ver Proyectos</a></div>
+                            <div class="div-projects"><a class="btn-projects" href="https://es.reactjs.org/">View Project</a></div>
                             <i class="fab fa-github git-icon"></i>
                         </div>
                     </div>
@@ -216,64 +230,83 @@
         
             </div>
             <div class="seccion4" id="seccion4">
-                <nav class="t-decoration-blog">
+                <nav class="t-decoration-experimentos">
                     <nav class="line-up"></nav>
-                    <h1 class="t-blog">Blog</h1>
+                    <h1 class="t-experimentos">Experiments</h1>
                     <nav class="line-down"></nav>
                 </nav>
                 <div class="content4-1">
                         <nav class="grid-destacados">
                             <article class="house">
-                                <img src="./img/undraw_not_found_60pq.svg" alt="">
-                                <p class="t-tech-card">HTML</p>
-                                <p class="t-sinopsis"> En este articulo conoceremos  a la etiqueta <strong>canvas</strong> y algunos ejemplos de lo que puedes llegar ah hacer con ella.</p>
+                                <nav class="enlaces-house">
+                                    <a href="#" class="enlace-house">LIVE</a>
+                                </nav>
+                                <strong class="house-title">APP OF MOTOCICLYST</strong>
+                                <p class="t-sinopsis">
+                                    Esta es una aplicacion para una empresa de motostaxi la cual tiene una disponibilidad de 8 motos cada hora
+                                    esta app te permite solicitar una moto. <span style="opacity: .1;">#HolaMundoChallenge</span>
+                                </p>
+                                <p class="t-tech-card">HTML CSS <span class="js">JS</span></p>
                             </article>
                 
                             <article class="house">
-                                <img src="./img/undraw_not_found_60pq.svg" alt="">
-                                <p class="t-tech-card">CSS</p>
-                                <p class="t-sinopsis">En este articulo (tutorial) veremos como podemos hacer que una imagen se acople a su contenedor con unas sencillas propiedades de CSS.</p>
+                                <nav class="enlaces-house">
+                                    <a href="#" class="enlace-house">LIVE</a>
+                                    
+                                </nav>
+                                <strong class="house-title">APP OF MOTOCICLYST</strong>
+                                <p class="t-sinopsis">
+                                    Esta es una aplicacion para una empresa de motostaxi la cual tiene una disponibilidad de 8 motos cada hora,
+                                    esta app te permite solicitar una moto. <span style="opacity: .1;">#HolaMundoChallenge</span>
+                                </p>
+                                <p class="t-tech-card">HTML CSS <span class="js">JS</span></p>
                             </article>
                 
                             <article class="house">
-                                <img src="./img/undraw_not_found_60pq.svg" alt="">
-                                <p class="t-tech-card">JAVASCRIPT</p>
-                                <p class="t-sinopsis"> En este articulo veremos porque VanillaJS SI se puede utilizar en grandes proyectos y las ventajas y desventajas que esto le trae a los desarrolladores.</p>
+                                <nav class="enlaces-house">
+                                    <a href="#" class="enlace-house">LIVE</a>
+                                </nav>
+                                <strong class="house-title">APP OF TRIVIAS</strong>
+                                <p class="t-sinopsis">
+                                    Este proyecto es una SPA con 4 categorias de 20 preguntas cada una y que cuando terminas te añade a un ranking de 
+                                    jugadores con el tiempo que tardaste jugando. <span style="opacity: .1;">#HolaMundoChallenge</span>
+                                </p>
+                                <p class="t-tech-card">HTML CSS <span class="js">JS</span></p>
                             </article>
                 </div>
             </div>
             <div class="seccion5" id="seccion5">
                 <nav class="t-decoration">
                     <nav class="line-up"></nav>
-                    <h1 class="t-contacto">Contacto</h1>
+                    <h1 class="t-contacto">Contact</h1>
                     <nav class="line-down"></nav>
                 </nav>
                 <div class="content5-1">
                     <div class="titulo">
-                        <p class="p-formulario">Para empezar un proyecto juntos pueden contactarme a traves de un DM en mi cuenta de instagram, o a traves de mi correo: vicode094@gmail.com. O puedes llenar el formulario que te dejo a continuacion.</p>
+                        <p class="p-formulario">Para empezar un proyecto juntos pueden contactarme atraves de un DM en mi cuenta de instagram, o atraves de mi correo: vicode094@gmail.com. O puedes llenar el formulario que te dejo a continuacion.</p>
                     </div>
                     <main>
                         <form class="formulario" id="formulario">
                             <div class="formulario__grupo" id="grupo__nombre">
-                                <label for="nombre" class="formulario__label">Nombre</label>
+                                <label for="nombre" class="formulario__label">Name</label>
                                 <div class="formulario__grupo-input">
-                                    <input type="text" class="formulario__input" name="nombre" id="usuario" placeholder="Nombre">
+                                    <input type="text" class="formulario__input" name="nombre" id="usuario" placeholder="Name">
                                     <i class="formulario__validacion-estado fas fa-times-circle"></i>
                                 </div>
                                 <p class="formulario__input-error">El nombre tiene que ser de 4 a 16 digitos y solo puede contener  numeros, letras y guin bajo.</p>
                             </div>
                 
                             <div class="formulario__grupo" id="grupo__apellido">
-                                <label for="apellido" class="formulario__label">Apellido</label>
+                                <label for="apellido" class="formulario__label">Last name</label>
                                 <div class="formulario__grupo-input">
-                                    <input type="text" class="formulario__input" name="apellido" id="apellido" placeholder="Apellido">
+                                    <input type="text" class="formulario__input" name="apellido" id="apellido" placeholder="Last name">
                                     <i class="formulario__validacion-estado fas fa-times-circle"></i>
                                 </div>
                                 <p class="formulario__input-error">El apellido tiene que ser de 4 a 16 digitos y solo puede contener  numeros, letras y guin bajo.</p>
                             </div>
                 
                             <div class="formulario__grupo" id="grupo__correo">
-                                <label for="correo" class="formulario__label">Correo Electronico</label>
+                                <label for="correo" class="formulario__label">Email</label>
                                 <div class="formulario__grupo-input">
                                     <input type="email" class="formulario__input" name="correo" id="correo" placeholder="Ej: vicode@correo.com">
                                     <i class="formulario__validacion-estado fas fa-times-circle"></i>
@@ -282,7 +315,7 @@
                             </div>
     
                             <div class="formulario__grupo" id="grupo__telefono">
-                                <label for="telefono" class="formulario__label">Telefono</label>
+                                <label for="telefono" class="formulario__label">Phone</label>
                                 <div class="formulario__grupo-input">
                                     <input type="text" class="formulario__input" name="telefono" id="telefono">
                                     <i class="formulario__validacion-estado fas fa-times-circle"></i>
@@ -291,7 +324,7 @@
                             </div>
 
                             <div class="formulario__grupo" id="grupo__mensaje">
-                                <label for="mensaje" class="formulario__label">Mensaje</label>
+                                <label for="mensaje" class="formulario__label">Message</label>
                                 <div class="formulario__grupo-input">
                                     <input type="text" class="mensaje__input" name="mensaje" id="mensaje">
                                     <i class="formulario__validacion-estado fas fa-times-circle"></i>
@@ -304,7 +337,7 @@
                             </div>
                 
                             <div class="formulario__grupo formulario__grupo-btn-enviar">
-                                <button type="submit" class="formulario__btn">Enviar</button>
+                                <button type="submit" class="formulario__btn">Submit</button>
                                 <!-- <canvas id="btn-canvas" width="160px" height="45px"> -->
                                 <!-- </canvas> -->
                                 <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado exitosamente!!</p>
@@ -313,12 +346,8 @@
                     </main>             
                 </div>
             </div>
-        </section>    
-    
-        <script type="module" src="js/main.js"></script>
-
-    <script>
-    CSS.paintWorklet.addModule('js/button.js');
-    </script>
+        </section>        
+    <script type="module" src="js/main.js"></script>
+    <script>CSS.paintWorklet.addModule('js/button.js');</script>
 </body>
 </html>

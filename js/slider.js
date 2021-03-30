@@ -1,14 +1,13 @@
 export default function slider () {
+    const left = document.querySelector(".fa-angle-left"),
+    right = document.querySelector(".fa-angle-right"),
+    $items = document.querySelectorAll(".item");
+    let $btnEnlace = document.querySelector(".btn-projects"),
+    enlaces = ["https://es.reactjs.org/","https://jonmircha.com/","https://vicodeven.github.io/easybank-challeng/"],
+    item = 0;
 
-let item = 0;
-const left = document.querySelector(".fa-angle-left");
-const right = document.querySelector(".fa-angle-right");
-let $btnEnlace = document.querySelector(".btn-projects");
-let enlaces = ["https://es.reactjs.org/","https://jonmircha.com/","https://vicodeven.github.io/easybank-challeng/"];
-const $items = document.querySelectorAll(".item");
-
-right.addEventListener('click', () => {changeItem(2)});
-left.addEventListener('click', () => {changeItem(1)});
+right.addEventListener('click', () => changeItem(2));
+left.addEventListener('click', () => changeItem(1));
 
 function changeItem (n) {
 
@@ -26,12 +25,9 @@ function changeItem (n) {
         }
     }
     
-    for(let i =0; i < $items.length; i++) {
-        $items[i].style.display = "none";
-    }
+    for(let i =0; i < $items.length; i++) $items[i].style.display = "none";
 
     $items[item].style.display = "flex";
     $btnEnlace.href=`${enlaces[item]}`;
-    
-}
+};
 }; 

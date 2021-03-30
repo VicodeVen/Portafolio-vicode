@@ -3,6 +3,8 @@
 }
 
 .titulo {
+    width: 80%;
+    margin: auto;
     position: relative;
 }
 
@@ -11,9 +13,11 @@
 }
 
 .formulario {
+    width: 80%;
     display: grid;
     grid-template-columns:1fr 1fr;
     gap: 20px;
+    margin: auto;
     margin-top: 6em;
 }
 

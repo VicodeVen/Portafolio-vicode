@@ -1,7 +1,8 @@
+import { removeClass, addClass } from './hooks/classHandler.js'
 export default function canvasAnimate () {
-    const d= document;
-    const w = window;
-    const gravedad = 0.30;
+    const w = window,
+    d= document,
+    gravedad = 0.30;
     let canvas = d.querySelector("#board"),
     ctx = canvas.getContext("2d"),
     grad1 = ctx.createLinearGradient(0,0,0,1400),
@@ -14,13 +15,13 @@ export default function canvasAnimate () {
     $service2 = d.querySelector(".service2"),
     $service3 = d.querySelector(".service3"),
     $service4 = d.querySelector(".service4"),
-    $ser1 = document.querySelector(".ser1"),
-    $ser2 = document.querySelector(".ser2"),
-    $ser3 = document.querySelector(".ser3"),
-    $ser4 = document.querySelector(".ser4");
+    $ser1 = d.querySelector(".ser1"),
+    $ser2 = d.querySelector(".ser2"),
+    $ser3 = d.querySelector(".ser3"),
+    $ser4 = d.querySelector(".ser4");
     
     function draw () {
-        grad1.addColorStop(0,"#3F69FF"); 
+        grad1.addColorStop(.5,"#3F69FF"); 
         grad1.addColorStop(1,"#EF0070"); 
         ctx.fillStyle=grad1; 
 
@@ -34,50 +35,36 @@ export default function canvasAnimate () {
             velocidad = 0;
             tiempo = 0;
             y = 50;
-        }
+        };
 
-        if(w.pageYOffset > 1800){$service1.classList.add("ser_opacity")} else {$service1.classList.remove("ser_opacity")};
-        if(y > 1300) {$service3.classList.add("ser_opacity");} else {$service3.classList.remove("ser_opacity")};
-        if(y > 895) {$service2.classList.add("ser_opacity")} else {$service2.classList.remove("ser_opacity")};
-        if(y > 480) {$service4.classList.add("ser_opacity")} else {$service4.classList.remove("ser_opacity")};
+        if(w.pageYOffset > 1800) addClass($service1, 'ser_opacity');
+        else removeClass($service1, 'ser_opacity');
+
+        if(y > 1300) addClass($service3, 'ser_opacity');
+        else removeClass($service3, 'ser_opacity');
+
+        if(y > 895) addClass($service2, 'ser_opacity');
+        else removeClass($service2, 'ser_opacity');
+
+        if(y > 480) addClass($service4, 'ser_opacity');
+        else removeClass($service4, 'ser_opacity');
         //squares
-        if(w.pageYOffset > 1812){
-            $ser1.classList.add("ser_opacity")
-            $ser1.classList.add("fadeInLeft");
-            $ser1.classList.add("transport");
-        }else {
-            $ser1.classList.remove("fadeInLeft");
-            $ser1.classList.remove("ser_opacity")
-            $ser1.classList.add("transport");
+        if(w.pageYOffset > 1812) addClass($ser1, 'ser_opacity', 'fadeInLeft', 'transport');
+        else {
+            removeClass($ser1, 'fadeInLeft', 'ser_opacity');
+            addClass($ser1, 'transport');
         };
-        if(y > 1300) {
-            $ser3.classList.add("ser_opacity")
-            $ser3.classList.add("fadeInRight")
-            $ser3.classList.add("transport")
-        }else {
-            $ser3.classList.remove("fadeInRight")
-            $ser3.classList.remove("ser_opacity")
-            $ser3.classList.remove("transport")
-        };
-        if(y > 895) {
-            $ser2.classList.add("ser_opacity")
-            $ser2.classList.add("fadeInLeft")
-            $ser2.classList.add("transport")
-        }else {
-            $ser2.classList.remove("ser_opacity")
-            $ser2.classList.remove("fadeInLeft")
-            $ser2.classList.remove("transport")
-        };
-        if(y > 480) {
-            $ser4.classList.add("ser_opacity")
-            $ser4.classList.add("fadeInRight")
-            $ser4.classList.add("transport")
-        }else {
-            $ser4.classList.remove("fadeInRight")
-            $ser4.classList.remove("ser_opacity")
-            $ser4.classList.remove("transport")
-        };
-        if(playing) requestAnimationFrame(draw)
-    }
+
+        if(y > 1300) addClass($ser3, 'ser_opacity', 'fadeInRight', 'transport');
+        else removeClass($ser3, 'fadeInRight', 'ser_opacity', 'transport');
+
+        if(y > 895) addClass($ser2, 'ser_opacity', 'fadeInLeft', 'transport');
+        else removeClass($ser2, 'ser_opacity', 'fadeInLeft', 'transport');
+
+        if(y > 480) addClass($ser4, 'ser_opacity', 'fadeInRight', 'transport');
+        else removeClass($ser4, 'ser_opacity', 'fadeInRight', 'transport');
+
+        if(playing) requestAnimationFrame(draw);
+    };
     requestAnimationFrame(draw);
-}
+};
