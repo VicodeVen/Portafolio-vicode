@@ -38,30 +38,38 @@ export default function canvasAnimate () {
         };
 
         if(w.pageYOffset > 1800) addClass($service1, 'ser_opacity');
+        
         else removeClass($service1, 'ser_opacity');
 
         if(y > 1300) addClass($service3, 'ser_opacity');
+
         else removeClass($service3, 'ser_opacity');
 
         if(y > 895) addClass($service2, 'ser_opacity');
+        
         else removeClass($service2, 'ser_opacity');
 
         if(y > 480) addClass($service4, 'ser_opacity');
+        
         else removeClass($service4, 'ser_opacity');
         //squares
         if(w.pageYOffset > 1812) addClass($ser1, 'ser_opacity', 'fadeInLeft', 'transport');
+        
         else {
             removeClass($ser1, 'fadeInLeft', 'ser_opacity');
             addClass($ser1, 'transport');
         };
 
         if(y > 1300) addClass($ser3, 'ser_opacity', 'fadeInRight', 'transport');
+        
         else removeClass($ser3, 'fadeInRight', 'ser_opacity', 'transport');
 
         if(y > 895) addClass($ser2, 'ser_opacity', 'fadeInLeft', 'transport');
+        
         else removeClass($ser2, 'ser_opacity', 'fadeInLeft', 'transport');
 
         if(y > 480) addClass($ser4, 'ser_opacity', 'fadeInRight', 'transport');
+        
         else removeClass($ser4, 'ser_opacity', 'fadeInRight', 'transport');
 
         if(playing) requestAnimationFrame(draw);

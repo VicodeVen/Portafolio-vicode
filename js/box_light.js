@@ -1,10 +1,10 @@
 import { addClass, removeClass } from './hooks/classHandler.js'
 
 export default function boxLight () {
-    const portafolio = document.querySelector(".portafolio");
-    const gitIcon = document.querySelector(".git-icon");
-    const workOption = document.querySelector(".work-option")
-    const btnProjects = document.querySelector(".btn-projects");
+    const portafolio = document.querySelector(".portafolio"),
+          gitIcon = document.querySelector(".git-icon"),
+          workOption = document.querySelector(".work-option"),
+          btnProjects = document.querySelector(".btn-projects")
 
     portafolio.addEventListener('mouseover', () => {
         addClass(workOption, 'actives');

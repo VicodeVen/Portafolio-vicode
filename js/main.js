@@ -6,11 +6,11 @@ import scroll  from "./scroll_animate.js";
 import canvasAnimate from "./canvas.js";
 
 
-// if('serviceWorker' in navigator) {
-//     navigator.serviceWorker.register('./sw.js')
-//     .then(reg => console.log(`Registro exitoso ${reg}`, reg))
-//     .catch(err => console.warn(`Error al tratar de registrar el serviceWorker`, err))
-// }    
+if('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('./sw.js')
+    .then(reg => console.log(`Registro exitoso ${reg}`, reg))
+    .catch(err => console.warn(`Error al tratar de registrar el serviceWorker`, err))
+}    
 
 document.addEventListener("DOMContentLoaded", () => {
     scroll();

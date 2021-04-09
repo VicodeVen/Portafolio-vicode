@@ -38,4 +38,4 @@
             ctx.stroke();
         }
     }
-    registerPaint('button',Bezel)
+    registerPaint('button',Bezel);
